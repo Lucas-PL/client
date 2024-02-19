@@ -7,9 +7,10 @@ export default function ButtonUsage() {
   <>
   <Button variant="contained">Hello world</Button><br></br>
   <ButtonGroup variant="contained" aria-label="Basic button group">
-      <Button>One</Button>
-      <Button>Two</Button>
-      <Button>Three</Button>
+      <Button>01</Button>
+      <Button>02</Button>
+      <Button>03</Button>
+      
  </ButtonGroup>
   </>)
 
