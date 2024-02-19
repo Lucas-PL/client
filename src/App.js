@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import Button from './Components/Button';
 import React, { useState, useEffect } from 'react';
+import RegistrationForm from './Components/RegistrationForm';
 
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
     return (
       <div className="App">
         <header className="App-header">
+          <RegistrationForm />
          <p>Zmienna to: {zmienna}</p>
           <Button />
         </header>
