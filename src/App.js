@@ -4,6 +4,7 @@ import Button from './Components/Button';
 import React, { useState, useEffect } from 'react';
 import RegistrationForm from './Components/RegistrationForm';
 import Trial from './Components/Trial';
+import Menu from './Components/Menu';
 
 
 function App() {
@@ -13,7 +14,7 @@ function App() {
 
       const hostlink = (process.env.NODE_ENV == 'development') ? "http://localhost:4000": "http://www.gastopstorage.com.pl:4000";
       console.log(" to jest hostlink:  ", hostlink)
-      // console.log("to jest process env:  ", process.env.REACT_APP_LOCALHOST)
+      
     
       fetch(hostlink +'/message', {
         method: 'GET',
@@ -34,13 +35,14 @@ function App() {
 
     return (
       <div className="App">
+          <Menu />
         <header className="App-header">
-          <RegistrationForm />
+          {/* <RegistrationForm />
          <p>Zmienna to: {zmienna}</p>
          <p>environment data: {process.env.REACT_APP_LOCALHOST}</p>
          <p>The NODE_ENV IS:  {process.env.NODE_ENV}</p>
           <Button />
-          <Trial />
+          <Trial /> */}
         </header>
       </div>
     )
