@@ -3,6 +3,7 @@ import './App.css';
 import Button from './Components/Button';
 import React, { useState, useEffect } from 'react';
 import RegistrationForm from './Components/RegistrationForm';
+import Trial from './Components/Trial';
 
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
           <RegistrationForm />
          <p>Zmienna to: {zmienna}</p>
           <Button />
+          <Trial />
         </header>
       </div>
     )
