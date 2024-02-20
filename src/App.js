@@ -10,8 +10,12 @@ function App() {
    const [ zmienna, setZmienna ] = useState('brakZmiennej');
 
     useEffect(() =>{
+
+      const hostlink = (process.env.NODE_ENV == 'development') ? "http://localhost:4000": "http://www.gastopstorage.com.pl:4000";
+      console.log(" to jest hostlink:  ", hostlink)
+      // console.log("to jest process env:  ", process.env.REACT_APP_LOCALHOST)
     
-      fetch(`http://localhost:4000/message`, {
+      fetch(hostlink +'/message', {
         method: 'GET',
         headers: {
           'Accept': 'application/json',
@@ -33,6 +37,8 @@ function App() {
         <header className="App-header">
           <RegistrationForm />
          <p>Zmienna to: {zmienna}</p>
+         <p>environment data: {process.env.REACT_APP_LOCALHOST}</p>
+         <p>The NODE_ENV IS:  {process.env.NODE_ENV}</p>
           <Button />
           <Trial />
         </header>
