@@ -5,64 +5,47 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import Link from '@mui/material/Link';
+import { useSpring, animated } from '@react-spring/web';
 
-function Copyright() {
-  return (
-    <Typography variant="body2" color="text.secondary">
-      {'Copyright © '}
-      <Link color="inherit" href="https://mui.com/">
-        Your Website
-      </Link>{' '}
-      {new Date().getFullYear()}
-      {'.'}
-    </Typography>
-  );
-}
-
-// TODO remove, this demo shouldn't need to reset the theme.
 const defaultTheme = createTheme();
 
 export default function ButtonUsage() {
-  return (
-    <ThemeProvider theme={defaultTheme}>
-      <Box
-        sx={{
-          display: 'flex',
-          flexDirection: 'column',
-          minHeight: '100vh',
-        }}
-      >
-        <CssBaseline />
-        <Container component="main" sx={{ mt: 8, mb: 2 }} maxWidth="sm">
-          <Typography variant="h2" component="h1" gutterBottom>
-            Our History
-          </Typography>
-          <Typography variant="h5" component="h2" gutterBottom>
-          We believe that the idea supported by passion, work, and engagement give a result in the form of a refined product, satisfaction and user safety.
-           
-          </Typography>
-          <Typography variant="body1">Poland 1996</Typography>
-        </Container>
-        {/* <Box
-          component="footer"
-          sx={{
-            py: 3,
-            px: 2,
-            mt: 'auto',
-            backgroundColor: (theme) =>
-              theme.palette.mode === 'light'
-                ? theme.palette.grey[200]
-                : theme.palette.grey[800],
-          }}
-        >
-          <Container maxWidth="sm">
-            <Typography variant="body1">
-              My sticky footer can be found here.
-            </Typography>
-            <Copyright />
-          </Container>
-        </Box> */}
-      </Box>
-    </ThemeProvider>
-  );
+
+    const springs = useSpring({
+        from: { x: -100, y: -100, opacity: 0 },
+        to: { x: 0, y: 0, opacity: 1 },
+
+    })
+
+
+    return (
+        <animated.div style={{ ...springs }}>
+            <ThemeProvider theme={defaultTheme}>
+                <Box
+                    sx={{
+                        display: 'flex',
+                        flexDirection: 'column',
+                        minHeight: '100vh',
+                    }}
+                >
+                    <CssBaseline />
+                    <Container component="main" sx={{ mt: 8, mb: 2 }} maxWidth="sm">
+                  
+                        <Typography variant="h2" component="h1" gutterBottom>
+                            Our <span style={{ color: "#0060af" }}>History</span>
+                        </Typography>
+                  
+                        <Typography variant="h5" component="h2" gutterBottom>
+                            We believe that the idea supported by passion, work, and engagement give a result in the form of a refined product, satisfaction and user safety.
+
+                        </Typography>
+                    
+                            <Typography variant="body1"><span style={{ color: "#0060af"}}>European Union</span> 1996</Typography>
+                 
+                    </Container>
+
+                </Box>
+            </ThemeProvider>
+        </animated.div>
+    );
 }

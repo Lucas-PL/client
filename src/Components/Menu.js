@@ -11,7 +11,7 @@ function Menu() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav fill>
-            <Nav.Link href="#home">Produkty</Nav.Link>
+            <Nav.Link href="#link">Produkty</Nav.Link>
             <Nav.Link href="#link">O Firmie</Nav.Link>
             <Nav.Link href="#link">Porftolio</Nav.Link>
             <Nav.Link href="#link">Kontakt</Nav.Link>
