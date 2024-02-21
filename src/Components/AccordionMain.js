@@ -5,6 +5,7 @@ import Container from 'react-bootstrap/Container';
 function AccordionMain() {
   return (
     <Container>
+      <h1 style={{marginTop: 50}}>Our History</h1>
 
     <Accordion style={{ opacity: 0.2, color: 'black'}} defaultActiveKey="0">
       <Accordion.Item eventKey="0">
@@ -18,7 +19,7 @@ function AccordionMain() {
           
      
     </Accordion>
-    <br></br>
+   
     </Container>
   );
 }

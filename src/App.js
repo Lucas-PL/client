@@ -5,6 +5,9 @@ import React, { useState, useEffect } from 'react';
 import RegistrationForm from './Components/RegistrationForm';
 import Trial from './Components/Trial';
 import Menu from './Components/Menu';
+import AccordionMain from './Components/AccordionMain';
+
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 function App() {
@@ -36,6 +39,7 @@ function App() {
     return (
       <div className="App">
           <Menu />
+          <AccordionMain/>
         <header className="App-header">
           {/* <RegistrationForm />
          <p>Zmienna to: {zmienna}</p>
