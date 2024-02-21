@@ -1,13 +1,21 @@
 import logo from './logo.svg';
 import './App.css';
-import Button from './Components/Button';
+
 import React, { useState, useEffect } from 'react';
 import RegistrationForm from './Components/RegistrationForm';
 import Trial from './Components/Trial';
 import Menu from './Components/Menu';
 import AccordionMain from './Components/AccordionMain';
+import MainPage from './Pages/MainPage';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
+
+import ButtonUsage from './Components/ButtonUsage';
+import '@fontsource/roboto/300.css';
+import '@fontsource/roboto/400.css';
+import '@fontsource/roboto/500.css';
+import '@fontsource/roboto/700.css';
+
 
 
 function App() {
@@ -38,16 +46,21 @@ function App() {
 
     return (
       <div className="App">
-          <Menu />
-          <AccordionMain/>
-        <header className="App-header">
+          <MainPage/>
+          
+          
+          
+          {/* <Menu /> */}
+          {/* <AccordionMain/> */}
+          {/* <ButtonUsage/> */}
+        {/* <header className="App-header"> */}
           {/* <RegistrationForm />
          <p>Zmienna to: {zmienna}</p>
          <p>environment data: {process.env.REACT_APP_LOCALHOST}</p>
          <p>The NODE_ENV IS:  {process.env.NODE_ENV}</p>
           <Button />
           <Trial /> */}
-        </header>
+        {/* </header> */}
       </div>
     )
   }
