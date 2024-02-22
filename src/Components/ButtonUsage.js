@@ -23,7 +23,7 @@ export default function ButtonUsage() {
         <animated.div style={{ ...springs }}>
 
             <ThemeProvider theme={defaultTheme}>
-                <Box
+                <Box className="box-features"
                     sx={{
                         display: 'flex',
                         flexDirection: 'column',
