@@ -6,6 +6,7 @@ import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import Link from '@mui/material/Link';
 import { useSpring, animated } from '@react-spring/web';
+import '../Components/ButtonUsage.scss';
 
 const defaultTheme = createTheme();
 
@@ -20,6 +21,7 @@ export default function ButtonUsage() {
 
     return (
         <animated.div style={{ ...springs }}>
+
             <ThemeProvider theme={defaultTheme}>
                 <Box
                     sx={{
@@ -29,23 +31,24 @@ export default function ButtonUsage() {
                     }}
                 >
                     <CssBaseline />
-                    <Container component="main" sx={{ mt: 8, mb: 2 }} maxWidth="sm">
-                  
+                    <Container className="div-background" component="main" sx={{ mt: 8, mb: 2 }} maxWidth="sm">
+
                         <Typography variant="h2" component="h1" gutterBottom>
                             Our <span style={{ color: "#0060af" }}>History</span>
                         </Typography>
-                  
+
                         <Typography variant="h5" component="h2" gutterBottom>
                             We believe that the idea supported by passion, work, and engagement give a result in the form of a refined product, satisfaction and user safety.
 
                         </Typography>
-                    
-                            <Typography variant="body1"><span style={{ color: "#0060af"}}>European Union</span> 1996</Typography>
-                 
-                    </Container>
 
-                </Box>
-            </ThemeProvider>
-        </animated.div>
+                        <Typography variant="body1"><span style={{ color: "#0060af" }}>European Union</span> 1996</Typography>
+
+                    </Container>
+                
+
+            </Box>
+        </ThemeProvider>
+        </animated.div >
     );
 }
