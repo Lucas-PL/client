@@ -1,23 +1,15 @@
-
 import Menu from '../Components/Menu';
-
-import 'bootstrap/dist/css/bootstrap.min.css';
-
-import ButtonUsage from '../Components/ButtonUsage';
-import '@fontsource/roboto/300.css';
-import '@fontsource/roboto/400.css';
-import '@fontsource/roboto/500.css';
-import '@fontsource/roboto/700.css';
-
-
+import PageTitle from '../Components/PageTitle';
 
 export default function MainPage() {
 
     return (
       <div className="App">
           <Menu/>
-          <ButtonUsage/>
-    
+          <PageTitle 
+            titleOne="Our" 
+            titleTwo="Branch" 
+            text="Our Company is primarly engaged in manufacturing turnstiles, speedgates, swinggates and accessories."/>
       </div>
     )
   }

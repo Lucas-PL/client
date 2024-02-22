@@ -1,6 +1,7 @@
 import Dropdown from 'react-bootstrap/Dropdown';
 import DropdownButton from 'react-bootstrap/DropdownButton';
 import Stack from 'react-bootstrap/Stack';
+import ga2 from './ga2.png';
 
 function Trial() {
   return (
