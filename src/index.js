@@ -1,34 +1,34 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import MainPage from './Pages/MainPage';
+import Products from './Pages/Products';
+import Contact from './Pages/Contact';
+import Portfolio from './Pages/Portfolio';
+import About from './Pages/About';
+
+// import '@fontsource/roboto/300.css';
+// import '@fontsource/roboto/400.css';
+// import '@fontsource/roboto/500.css';
+// import '@fontsource/roboto/700.css';
 
 
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Layout from "./Pages/Layout";
-import Products from "./Pages/Products";
-import Contact from "./Pages/Contact";
-import NoPage from "./Pages/NoPage";
-import MainPage from "./Pages/MainPage";
+const router = createBrowserRouter([
+  { path: "/",          element: <MainPage />},
+  { path: "Products",   element: <Products />},
+  { path: "Contact",    element: <Contact />},
+  { path: "Portfolio",  element: <Portfolio />},
+  { path: "About",      element: <About />},
+]);
 
-export default function App() {
-  return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<MainPage />} />
-          <Route path="Products" element={<Products />} />
-          <Route path="Contact" element={<Contact />} />
-          <Route path="*" element={<NoPage />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
-  );
-}
+
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );

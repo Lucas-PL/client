@@ -1,25 +1,25 @@
-
-import Menu from '../Components/Menu';
-
-import 'bootstrap/dist/css/bootstrap.min.css';
-
-import ButtonUsage from '../Components/ButtonUsage';
-import '@fontsource/roboto/300.css';
-import '@fontsource/roboto/400.css';
-import '@fontsource/roboto/500.css';
-import '@fontsource/roboto/700.css';
-
-
+import PageTitle from '../Components/PageTitle';
+import ProductMenuItem from '../Components/ProductMenuItem';
+import Container from 'react-bootstrap/Container';
 
 export default function MainPage() {
 
-    return (
+  return (
+    <>
       <div className="App">
-          <Menu/>
-          <ButtonUsage/>
-          <h1>To jest strona produktowa</h1>
-    
+        <PageTitle
+          titleOne="Our"
+          titleTwo=" Products"
+          text="Our products make the world safer" />
       </div>
-    )
-  }
+      <Container style={{
+                        display: 'flex',
+                        flexDirection: 'row',
+                        // minHeight: '100vh',
+                    }}>
+        <ProductMenuItem title="Turnstile"/><ProductMenuItem title="SpeedGate" /><ProductMenuItem title="SwingGate" />
+      </Container>
+    </>
+  )
+}
 

@@ -2,8 +2,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import { Outlet, Link } from "react-router-dom";
-
+import { Link } from 'react-router-dom';
 
 function Menu() {
   return (
@@ -13,10 +12,10 @@ function Menu() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav fill>
-            <Nav.Link><Link to="/Products"></Link>Pppprodukty</Nav.Link>
-            <Nav.Link href="#link">O Firmie</Nav.Link>
-            <Nav.Link href="#link">Porftolio</Nav.Link>
-            <Nav.Link><Link to="/Contact"></Link>Kontakt</Nav.Link>
+            <Link to={`Products`}>Products</Link>
+            <Link to={`About`}>About</Link>
+            <Link to={`Portfolio`}>Porftolio</Link>
+            <Link to={`Contact`}>Contact</Link>
             <NavDropdown title="Dropdown" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">

@@ -1,7 +1,10 @@
-import react from 'react';
+import PageTitle from '../Components/PageTitle';
 
-const Contact = () => {
-    return <h1>Contact Me</h1>;
-  };
-  
-  export default Contact;
+export default function Contact() {
+
+    return (
+      <div className="App">
+          <PageTitle titleOne="Contact" titleTwo="Us"/>
+      </div>
+    )
+  }

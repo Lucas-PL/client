@@ -4,42 +4,37 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
-import Link from '@mui/material/Link';
 import { useSpring, animated } from '@react-spring/web';
-import styl from '../Components/ButtonUsage.module.scss';
+import '../Components/PageTitle.scss';
 
 const defaultTheme = createTheme();
 
-export default function ButtonUsage() {
+export default function PageTitle(props) {
 
     const springs = useSpring({
         from: { x: -100, y: -100, opacity: 0 },
         to: { x: 0, y: 0, opacity: 1 },
-
     })
-
-
     return (
         <animated.div style={{ ...springs }}>
 
             <ThemeProvider theme={defaultTheme}>
-                <Box className="styl.box-features"
+                <Box className="box-features"
                     sx={{
                         display: 'flex',
                         flexDirection: 'column',
-                        minHeight: '100vh',
+                        // minHeight: '100vh',
                     }}
                 >
                     <CssBaseline />
-                    <Container className="styl.div-background" component="main" sx={{ mt: 8, mb: 2 }} maxWidth="sm">
+                    <Container className="div-background" component="main" sx={{ mt: 8, mb: 2 }} maxWidth="sm">
 
                         <Typography variant="h2" component="h1" gutterBottom>
-                            Our <span style={{ color: "#0060af" }}>History</span>
+                            {props.titleOne} <span style={{ color: "#0060af" }}>{props.titleTwo}</span>
                         </Typography>
 
                         <Typography variant="h5" component="h2" gutterBottom>
-                            We believe that the idea supported by passion, work, and engagement give a result in the form of a refined product, satisfaction and user safety.
-
+                            {props.text}
                         </Typography>
 
                         <Typography variant="body1"><span style={{ color: "#0060af" }}>European Union</span> 1996</Typography>
