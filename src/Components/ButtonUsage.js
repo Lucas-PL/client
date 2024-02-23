@@ -6,7 +6,7 @@ import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import Link from '@mui/material/Link';
 import { useSpring, animated } from '@react-spring/web';
-import '../Components/ButtonUsage.scss';
+import styl from '../Components/ButtonUsage.module.scss';
 
 const defaultTheme = createTheme();
 
@@ -23,7 +23,7 @@ export default function ButtonUsage() {
         <animated.div style={{ ...springs }}>
 
             <ThemeProvider theme={defaultTheme}>
-                <Box className="box-features"
+                <Box className="styl.box-features"
                     sx={{
                         display: 'flex',
                         flexDirection: 'column',
@@ -31,7 +31,7 @@ export default function ButtonUsage() {
                     }}
                 >
                     <CssBaseline />
-                    <Container className="div-background" component="main" sx={{ mt: 8, mb: 2 }} maxWidth="sm">
+                    <Container className="styl.div-background" component="main" sx={{ mt: 8, mb: 2 }} maxWidth="sm">
 
                         <Typography variant="h2" component="h1" gutterBottom>
                             Our <span style={{ color: "#0060af" }}>History</span>
