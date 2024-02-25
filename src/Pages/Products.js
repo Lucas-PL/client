@@ -1,6 +1,7 @@
 import PageTitle from '../Components/PageTitle';
 import ProductMenuItem from '../Components/ProductMenuItem';
 import Container from 'react-bootstrap/Container';
+import Menu from '../Components/Menu';
 
 export default function MainPage() {
 

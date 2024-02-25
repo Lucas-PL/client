@@ -1,0 +1,46 @@
+.visitcards {
+    color: black;
+    background-color: white;
+    margin: auto;
+    width: 350px;
+    height: 200px;
+    padding-top: 10px;
+    border-radius: 10px;
+    opacity: 0.8;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 20px;
+}
+
+.logo {
+
+}
+
+.logoLeft {
+    text-align: left;
+}
+
+.name {
+padding-top: 40px;
+}
+.name > p {
+    font-size: 10px;
+    color: rgb(66, 66, 66);
+    opacity: 0.8;
+    margin-top: -5px;
+}
+
+.company {
+    
+    font-size: 10px;
+    padding-top: 20px;
+
+}
+
+.company > p {
+    
+    font-size: 10px;
+    color: rgb(66, 66, 66);
+    opacity: 0.8;
+
+}

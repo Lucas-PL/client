@@ -8,23 +8,19 @@ import Products from './Pages/Products';
 import Contact from './Pages/Contact';
 import Portfolio from './Pages/Portfolio';
 import About from './Pages/About';
-
-// import '@fontsource/roboto/300.css';
-// import '@fontsource/roboto/400.css';
-// import '@fontsource/roboto/500.css';
-// import '@fontsource/roboto/700.css';
-
+import Layout from './Pages/Layout';
 
 const router = createBrowserRouter([
-  { path: "/",          element: <MainPage />},
-  { path: "Products",   element: <Products />},
-  { path: "Contact",    element: <Contact />},
-  { path: "Portfolio",  element: <Portfolio />},
-  { path: "About",      element: <About />},
+  { element: <Layout />,
+  
+   children: [
+     { path: "/",          element: <MainPage />},
+     { path: "Products",   element: <Products />},
+     { path: "Contact",    element: <Contact />},
+     { path: "Portfolio",  element: <Portfolio />},
+     { path: "About",      element: <About />},
+    ]}
 ]);
-
-
-
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

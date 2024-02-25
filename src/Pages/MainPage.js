@@ -5,7 +5,6 @@ export default function MainPage() {
 
     return (
       <div className="App">
-          <Menu/>
           <PageTitle 
             titleOne="Our" 
             titleTwo="Branch" 
