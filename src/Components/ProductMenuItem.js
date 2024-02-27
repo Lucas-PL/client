@@ -6,16 +6,20 @@ import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import ga2 from "../ga2.png";
+import sg2 from "../sg2.png";
 
 export default function ImgMediaCard(props) {
+  var ggg;
+
+  if (props.gate == "ga2") { ggg = ga2} else { ggg = sg2}
   return (
     <div style={{ padding: "2%" }}>
-      <Card sx={{ maxWidth: 345 }}>
+      <Card sx={{ width: "100%", maxWidth: "300px" }}>
         <CardMedia
           component="img"
           alt="Turnstile GA2"
           height="240"
-          image={ga2}
+          image={ggg}
         />
         <CardContent>
           <Typography gutterBottom variant="h4" component="div">
