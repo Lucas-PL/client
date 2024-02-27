@@ -14,7 +14,7 @@ export default function ImgMediaCard(props) {
   if (props.gate == "ga2") { ggg = ga2} else { ggg = sg2}
   return (
     <div style={{ padding: "2%" }}>
-      <Card sx={{ width: "100%", maxWidth: "300px" }}>
+      <Card sx={{ width: "100%", maxWidth: "350px" }}>
         <CardMedia
           component="img"
           alt="Turnstile GA2"

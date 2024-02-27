@@ -1,11 +1,11 @@
 import Menu from '../Components/Menu';
-import PageTitle from '../Components/PageTitle';
+import MainTitle from '../Components/MainTitle';
 
 export default function MainPage() {
 
     return (
       <div className="App">
-          <PageTitle 
+          <MainTitle 
             titleOne="Our" 
             titleTwo="Branch" 
             text="Our Company is primarly engaged in manufacturing turnstiles, speedgates, swinggates and accessories."/>

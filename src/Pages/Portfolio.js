@@ -1,10 +1,10 @@
-import PageTitle from '../Components/PageTitle';
+import MainTitle from '../Components/MainTitle';
 
 export default function Portfolio() {
 
     return (
       <div className="App">
-          <PageTitle 
+          <MainTitle 
             titleOne="Our" 
             titleTwo="Portfolio"
             text="Thousands of installations worldwide."/>

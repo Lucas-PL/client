@@ -1,7 +1,7 @@
-import PageTitle from '../Components/PageTitle';
+import MainTitle from '../Components/MainTitle';
 import ProductMenuItem from '../Components/ProductMenuItem';
 import Container from 'react-bootstrap/Container';
-import Menu from '../Components/Menu';
+
 import styles from '../Pages/Products.module.scss';
 
 export default function MainPage() {
@@ -9,7 +9,7 @@ export default function MainPage() {
   return (
     <>
       <div className="App">
-        <PageTitle
+        <MainTitle
           titleOne="Our"
           titleTwo=" Products"
           text="Our products make the world safer" />

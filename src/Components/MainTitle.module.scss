@@ -1,0 +1,51 @@
+@keyframes slideInLeft {
+    0% {    transform: translate(-150px, -50px) rotate(-5deg);
+            
+            opacity: 0;                 }
+    100% {  transform: translate(0,0) rotate(0deg);
+            
+            opacity: 1;   }
+  }
+
+
+
+.mainDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+}
+
+
+.backgroundDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+    padding: 20px;
+    width: 600px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.6);
+    animation: 0.3s ease-out 0s 1 slideInLeft;
+}
+
+.upperText {
+    padding-bottom: 30px;
+    opacity: 0.9;
+   
+}
+
+.bottomText {
+    padding: 10px;
+    opacity: 0.9;
+   
+}
+
+
+@media only screen and (min-width: 1000px) {
+    .backgroundDiv {
+        background-color: rgb(0, 214, 252, 0);
+    }
+}

@@ -1,10 +1,11 @@
-import PageTitle from '../Components/PageTitle';
+import MainTitle from '../Components/MainTitle';
+
 
 export default function Contact() {
 
     return (
       <div className="App">
-          <PageTitle titleOne="Contact" titleTwo="Us"/>
+          <MainTitle titleOne="Contact" titleTwo="Us"/>
       </div>
     )
   }
