@@ -20,8 +20,8 @@ function Menu() {
         width="800px"
         height="450px"/> */}
 
-      <video src={video} width="1200" height="400" muted autoplay></video>
-      <video src={video} width="1200" height="400" controls autoplay />
+      {/* <video src={video} width="1200" height="400" muted autoplay></video>
+      <video src={video} width="1200" height="400" controls autoplay /> */}
 
         <Container>
           <Navbar.Brand href="#home"><img src="logo-gastop.png" /></Navbar.Brand>
