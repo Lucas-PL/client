@@ -21,7 +21,7 @@
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
-    
+
 }
 
 /* Change the color of links on hover */
@@ -63,26 +63,32 @@
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
 @media screen and (max-width: 600px) {
-    .topnav.responsive {
+    .topnav {
         position: relative;
         display: block;
     }
 
-    .topnav.responsive a.icon {
+    .topnav .responsive a.icon {
         position: absolute;
         right: 0;
-        top: 0;
+
     }
 
-    .topnav.responsive a {
+    .topnav .responsive a {
         float: none;
         display: block;
         text-align: right;
     }
 
+    .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
     .menuMobile {
         display: block;
-    text-decoration: none;
-    padding: 20px;
+        text-decoration: none;
+        padding: 1px;
     }
 }

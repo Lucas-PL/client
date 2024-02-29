@@ -4,22 +4,16 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { Link } from 'react-router-dom';
 import styles from '../Components/Menu.module.scss';
-import MenuTwoToneIcon from '@mui/icons-material/MenuTwoTone';
-import ReactPlayer from 'react-player';
+import DensityMedium from '@mui/icons-material/DensityMedium';
 
-import video from '../FILM_GASTOP.mp4'
 
 function Menu() {
 
   function myFunction() {
     var x = document.getElementById("myTopnav");
-   
-    if (x.className === styles.topnav) {
-
+      if (x.className === styles.topnav) {
       x.className += styles.responsive;
-      
-    } else {
-
+          } else {
       x.className = styles.topnav;
     }
   }
@@ -30,13 +24,13 @@ function Menu() {
     <>
    
       <div className={styles.topnav} id="myTopnav">
-        <Link className={styles.active} to={`/`}><img src="logo-gastop.png" /></Link>
-        {/* <div className={styles.menuMobile}> */}
+        <div className={styles.menuMobile}>
+          <Link className={styles.active} to={`/`}><img src="logo-gastop.png" /></Link>
           <Link className={styles.Linki} to={`Products`}>Products</Link>
           <Link className={styles.Linki} to={`About`}>About</Link>
           <Link className={styles.Linki} to={`Portfolio`}>Porftolio</Link>
           <Link className={styles.Linki} to={`Contact`}>Contact</Link>
-        {/* </div> */}
+        </div>
 
         <a href="javascript:void(0);" className={styles.icon} onClick={myFunction}>
           <DensityMedium sx={{ border: 2, paddingTop: 1, paddingBottom: 1, minWidth: 50, borderRadius: 2, fontSize: 40 }} />
