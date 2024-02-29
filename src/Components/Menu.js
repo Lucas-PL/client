@@ -14,10 +14,11 @@ function Menu() {
 
   function myFunction() {
     var x = document.getElementById("myTopnav");
+   
     if (x.className === styles.topnav) {
 
       x.className += styles.responsive;
-      console.log("to jest className: ", x.className)
+      
     } else {
 
       x.className = styles.topnav;
@@ -28,7 +29,7 @@ function Menu() {
 
   return (
     <>
-
+   
       <div className={styles.topnav} id="myTopnav">
         <Link className={styles.active} to={`/`}><img src="logo-gastop.png" /></Link>
         {/* <div className={styles.menuMobile}> */}
