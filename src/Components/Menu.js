@@ -5,7 +5,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import { Link } from 'react-router-dom';
 import styles from '../Components/Menu.module.scss';
 import MenuTwoToneIcon from '@mui/icons-material/MenuTwoTone';
-import ReactPlayer from 'react-player';
+// import ReactPlayer from 'react-player';
 
 import video from '../FILM_GASTOP.mp4'
 
