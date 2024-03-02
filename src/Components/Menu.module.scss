@@ -1,8 +1,8 @@
 .mainContainer {
     display: flex;
     width: 100%;
-    // background-color: rgb(169, 252, 169);
     align-items: center;
+    justify-content: space-between;
     padding: 20px;
 
 }
@@ -10,28 +10,95 @@
 .logoContainer {
     display: flex;
     width: 20%;
-    // background-color: red;
-
-
+    
+    
 }
 
 .linksContainer {
     display: flex;
     justify-content: flex-end;
     width: 80%;
-    margin-right: 10%;
-
+    // margin-right: 10%;
+    
+    
 }
 
 .iconButtonContainer {
     display: flex;
     justify-content: flex-end;
-    
+        // background-color: red;
 
 
 }
 
-.icon {
+.iconButton {
+    color: white;
+    display: none;
+
+}
+
+.iconItem {
+    display: block;
+    padding: 4px;
+
+    font-size: 50px; 
+    opacity: 0.1; 
+    margin-right: 2px;
+    // visibility: hidden;
+    display: none;
+}
+
+.Linki {
+    font-size: 1rem;
+
+    text-decoration: none;
+    margin-right: 10%;
+    color: whitesmoke;
+    
+}
+
+.Linki:hover {
+    color: rgb(104, 104, 104);
+}
 
 
+
+@media screen and (max-width: 600px){
+    .iconButton{
+        display: flex;
+
+    }
+
+    .linksContainer {
+        display: none;
+        flex-direction: column;
+        margin-top: 50px;
+        padding-top: 40px;
+        padding-bottom: 400px;
+        // background-color: red;
+    }
+
+    .makeVisible {
+        display: flex;
+    }
+
+    .mainContainer {
+        align-items: flex-start;
+    }
+    
+    .Linki {
+        display: flex;
+        font-size: 2rem;
+        padding-top:10px;
+        padding-bottom:10px;
+        background-color: rgba(119, 118, 118, 0.4);
+        margin-top: 20px;
+        width: 90%;
+        text-align: center;
+        border-radius: 10px;
+    }
+
+    .Linki:hover {
+        background-color: rgba(161, 161, 161, 0.9);
+    }
 }
