@@ -1,4 +1,5 @@
 import MainTitle from '../Components/MainTitle';
+import CanvasThree from '../Components/canvasThree';
 
 export default function Portfolio() {
 
@@ -8,6 +9,8 @@ export default function Portfolio() {
             titleOne="Our" 
             titleTwo="Portfolio"
             text="Thousands of installations worldwide."/>
+
+            <CanvasThree />
       </div>
     )
   }
