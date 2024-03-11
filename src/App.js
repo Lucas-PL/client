@@ -46,17 +46,7 @@ function App() {
       <ThemeProvider>
         <Layout />
 
-        {/* <Menu /> */}
-        {/* <AccordionMain/> */}
-        {/* <ButtonUsage/> */}
-        {/* <header className="App-header"> */}
-        {/* <RegistrationForm />
-         <p>Zmienna to: {zmienna}</p>
-         <p>environment data: {process.env.REACT_APP_LOCALHOST}</p>
-         <p>The NODE_ENV IS:  {process.env.NODE_ENV}</p>
-         <Button />
-        <Trial /> */}
-        {/* </header> */}
+    
       </ThemeProvider>
     </div>
   );
