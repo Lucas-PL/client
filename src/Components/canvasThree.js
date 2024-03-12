@@ -21,25 +21,27 @@ function Box(props) {
     console.log(meshRef.current.rotation.y)
 
     // meshRef.current.rotation.y -= 0.01; 
-    groupRef.current.rotation.y -= 0.001;
+    // groupRef.current.rotation.y -= 0.001;
     // meshRef.current.rotation.x += 0.01; // Rotate around X-axis
   });
 
   return (
-    <group ref={groupRef} position={[0, -2, 0]}>
+    <group ref={groupRef} position={[0, -2, 0]} rotation={[0,3.6,0]} scale={3}>
       <mesh {...props} ref={meshRef} onClick={(event) => setActive(!active)} onPointerOver={(event) => setHover(true)} onPointerOut={(event) => setHover(false)}>
         {/* <boxGeometry args={[1, 1, 1]} />
       <meshStandardMaterial color="blue" /> */}
-        <primitive scale={active ? 1 : 2} object={gltf.scene} position={[-1, 0, 0]} rotation={[0, hover ? 4 : 1, 0]} />
+        <primitive object={gltf.scene} position={[-1, 0, 0]} rotation={[0, 0, 0]} />
       </mesh >
       <meshStandardMaterial color={hover ? 'hotpink' : 'blue'} />
-      {/* <OrbitControls 
-        minAzimuthAngle={-Math.PI / 1}
-        maxAzimuthAngle={Math.PI / 6}
-        minPolarAngle={Math.PI / 1}
-        maxPolarAngle={Math.PI - Math.PI / 6}  */}
-        {/* /> */}
-        <OrbitControls />
+      <OrbitControls 
+         minAzimuthAngle={-Math.PI / 6}
+         maxAzimuthAngle={Math.PI / 4}
+         minPolarAngle={Math.PI / 6}
+         maxPolarAngle={Math.PI - Math.PI / 3} 
+         enablePan={false}
+         enableZoom={false}
+        />
+        {/* <OrbitControls /> */}
     </group>
 
   );

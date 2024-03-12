@@ -1,12 +1,10 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import styles from '../Components/sgSensors.module.scss';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { useLoader } from '@react-three/fiber';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 import { useGLTF } from '@react-three/drei';
 import { useControls } from 'leva'
-
-
 import { OrbitControls } from '@react-three/drei'
 
 function Model(props) {
@@ -103,7 +101,7 @@ const Podloga = () => {
 
 const SgSensors = () => {
 
-
+const [active, setActive ] = useState(false);
 
   return (
     <div id={styles.container}>
@@ -113,16 +111,11 @@ const SgSensors = () => {
         <directionalLight color="white" intensity={10} position={[0, 3, 10]} castShadow
         
         shadow-radius={10}
-        
          />
-        <Model />
+        <Model scale={active ? 1: 4} onClick={(event)=>setActive(!active)}/>
         {/* <Box position={[1, 0, 0]} /> */}
         <Podloga receiveShadow />
         <OrbitControls />
-
-
-
-
       </Canvas>
 
     </div>
