@@ -6,9 +6,9 @@ export default function MainPage() {
     return (
       <div className="App">
           <MainTitle 
-            titleOne="Our" 
-            titleTwo="Branch" 
-            text="Our Company is primarly engaged in manufacturing turnstiles, speedgates, swinggates and accessories."/>
+            titleOne="SG" 
+            titleTwo="New Line of SpeedGates" 
+            text="Innovative New Line of SpeedGates "/>
       </div>
     )
   }
