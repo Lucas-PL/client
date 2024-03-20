@@ -1,4 +1,5 @@
 import MainTitle from '../Components/MainTitle';
+import AccordionWhite from'../Components/AccordionWhite';
 
 
 export default function Portfolio() {
@@ -9,6 +10,12 @@ export default function Portfolio() {
         titleOne="Our"
         titleTwo="Portfolio"
         text="Thousands of installations worldwide." />
+
+        <AccordionWhite />
+
+       
+
+
       
     </div>
 

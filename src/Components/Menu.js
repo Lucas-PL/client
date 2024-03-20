@@ -12,8 +12,6 @@ let IconContact = <PhoneAndroidIcon className={styles.iconItem}/>;
 let IconAbout = <PortraitIcon className={styles.iconItem}/>;
 let IconPortfolio = <ThumbUpAltIcon className={styles.iconItem}/>;
 
-// console.log("Iconproducts: ",IconProducts)
-
 
 function Menu() {
 
