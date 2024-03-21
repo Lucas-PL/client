@@ -10,8 +10,12 @@ export default function Portfolio() {
         titleOne="Our"
         titleTwo="Portfolio"
         text="Thousands of installations worldwide." />
+        <img src="gates_02.png" />
 
-        <AccordionWhite />
+        <AccordionWhite fileName="gates_04.png"/>
+
+        <img src="gates_03.png" />
+        <AccordionWhite fileName="gates_05.png" />
 
        
 

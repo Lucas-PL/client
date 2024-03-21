@@ -1,0 +1,22 @@
+.mainContainer {
+    display: flex;
+    flex-direction: row;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    // background-color: green;
+    
+}
+
+.leftInternalContainer {
+    width: 50%;
+    background-color: red;
+}
+
+.rightInternalContainer {
+    width: 50%;
+    background-color: rgb(243, 243, 243);
+}
+
+img {
+    width: 100%;
+}
