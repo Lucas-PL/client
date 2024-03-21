@@ -12,8 +12,9 @@ export default function AccordionWhite(props) {
                 <div className={styles.rightInternalContainer}>
                     
                     <FeatureDescription
-                     titleOne="The Gates" titleTwo="Second title"
-                     text="The speed of the gates speaks for itself" />
+                     titleOne={props.titleOne} 
+                     titleTwo={props.titleTwo}
+                     text={props.text} />
                 </div>
 
             </div>
