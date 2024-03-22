@@ -1,10 +1,35 @@
 import Menu from '../Components/Menu';
-
 import VisitCard from '../Components/VisitCard';
 import MainTitle from '../Components/MainTitle';
 import Typography from '@mui/material/Typography';
+import { alignProperty } from '@mui/material/styles/cssUtils';
+import React, { useState } from 'react';
+
 
 export default function About() {
+
+  const [count, setCount] = useState(1);
+
+  const handleClick = () => {
+    setCount(count+1);
+  }
+  
+  const myStyle = {
+    color: 'black',
+    width: '40%',
+    maxWidth: '250px',
+    borderStyle: 'solid',
+    borderWidth: '5px',
+    padding: '10px',
+    borderRadius: '30px',
+    boxShadow: '0 0 10px 5px rgba(0, 0, 0, 0.5)'
+  };
+
+  const mainContainer = {
+    display: 'flex',
+    justifyContent: 'center',
+    
+  }
 
   return (
     <>
@@ -16,10 +41,16 @@ export default function About() {
           text="We believe that the idea supported by passion, work, and engagement give a result in the form of a refined product, satisfaction and user safety." />
 
       </div>
-      {/* <Typography>
-        <VisitCard name="Eryk Batorowicz" />
-        <VisitCard name="Tomasz Zieliński" />
-      </Typography> */}
+    <div style={mainContainer}>
+      <div style={myStyle}>
+        <img src="mobileScreens/screen_01.jpeg" />
+        <h1>{count}</h1>
+      </div>
+      </div>
+
+      <button onClick={handleClick}>to jest button</button>
+      <button>to jest drugi button</button>
+
     </>
   )
 }
