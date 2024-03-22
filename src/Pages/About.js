@@ -10,8 +10,11 @@ export default function About() {
 
   const [count, setCount] = useState(1);
 
-  const handleClick = () => {
-    setCount(count+1);
+  const handleClick = ()=> {
+    
+    if (count < 10) {
+      setCount(count + 1);
+    }
   }
   
   const myStyle = {
@@ -43,12 +46,14 @@ export default function About() {
       </div>
     <div style={mainContainer}>
       <div style={myStyle}>
-        <img src="mobileScreens/screen_01.jpeg" />
-        <h1>{count}</h1>
+      <img src={`mobileScreens/screen_0${count}.jpeg`} alt={`Screen ${count}`} />
+    
+        {/* <img src=`mobileScreens/screen_0{count}.jpeg` /> */}
+        {/* <h1>{count}</h1> */}
       </div>
       </div>
 
-      <button onClick={handleClick}>to jest button</button>
+      <button onClick={handleClick} disabled={ count === 10 }>to jest button</button>
       <button>to jest drugi button</button>
 
     </>
