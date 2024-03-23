@@ -4,7 +4,6 @@
     // background-color: red;
     width: 100%;
     margin-top: 50px;
-    height: 100%;
     justify-content: center;
     align-items: center;
 }
@@ -12,17 +11,22 @@
 .leftInternalContainer {
  display: flex;
  justify-content: center;
+ align-items: center;
  margin: 30px;
  width: 50%;
  height: 500px;
-//  background-color:red;
+//  background-color:green;
 }
 
 .rightInternalContainer {
-// background-color: green;
-margin: 30px;
-width: 50%;
-}
+    display: flex;
+    flex-direction: column;
+    // background-color: green;
+    margin: 30px;
+    width: 50%;
+    align-items: center;
+    justify-content: start;
+}   
 
 .mobile {
     color: black;
@@ -33,30 +37,27 @@ width: 50%;
     padding: 10px;
     border-radius: 30px;
     align-items: center;
+    justify-content: center;
     box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
   }
 
-  ul {
-    padding: 0; /* Remove default padding from the <ul> element */
-    margin: 0; /* Remove default margin from the <ul> element */
+  img {
+    width: 100%;
   }
-  
 
-  li {
-    display: flex;
-    flex-direction: row;
+  .item {
     background-color: rgb(242, 240, 240);
     margin: 10px;
     width: 250px;
-    list-style-type: none;
+    // max-width: 300px;
     padding: 5px;
-    
     border-radius: 5px;
     align-items: center;
-    align-text: center;
+    text-align: center;
+    justify-content: center;
   }
 
-  li:hover {
+  .item:hover {
     background-color: rgb(201, 201, 201);
   }
 
@@ -65,6 +66,18 @@ width: 50%;
 @media screen and (max-width: 600px){
     .mainContainer {
         flex-direction: column;
-
+    }
+    .rightInternalContainer {
+      width: 50%;
+      align-items: center;
+      height: 600px;
+    }
+    .leftInternalContainer {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      width: 80%;
+      height: 600px;
     }
 }

@@ -7,9 +7,9 @@ export default function About() {
     <>
       <div className="App">
         <MainTitle
-          titleOne="Our"
-          titleTwo="History"
-          text="We believe that the idea supported by passion, work, and engagement give a result in the form of a refined product, satisfaction and user safety."
+          titleOne="Wifi"
+          titleTwo=" - Remote setup"
+          text="Remote access to the configuration panel makes it easy and effective to setup and configure the device parameters with your mobile."
         />
       </div>
 
