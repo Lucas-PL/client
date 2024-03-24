@@ -56,6 +56,7 @@ export default function AccordionMobile(props) {
             <div className={styles.item} onMouseOver={() => handleClick("17")}>Settings report</div>
           
         </div>
+
       </div>
     </>
   );
