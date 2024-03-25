@@ -57,6 +57,10 @@ export default function AccordionMobile(props) {
           
         </div>
 
+        <div className={styles.rightInternalContainer2}>
+          <img className={styles.image} src="gate.jpg"></img>
+        </div>
+
       </div>
     </>
   );

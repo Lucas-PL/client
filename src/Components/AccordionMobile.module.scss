@@ -47,9 +47,21 @@
 .rightInternalContainer {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 20%;
     padding: 30px;
 }   
+
+.rightInternalContainer2 {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  width: 700px;
+  height: 500px;
+}
 
 @keyframes float {
 	0% {

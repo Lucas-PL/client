@@ -15,6 +15,8 @@ export default function AccordionWhite(props) {
                      titleOne={props.titleOne} 
                      titleTwo={props.titleTwo}
                      text={props.text} />
+
+                     <img className={styles.image} src="gate.jpg"></img>
                 </div>
 
             </div>
