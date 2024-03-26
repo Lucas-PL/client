@@ -25,35 +25,19 @@ export default function AccordionMobile(props) {
         </div>
         <div className={styles.rightInternalContainer}>
           
-            <div className={styles.item} onMouseOver={() => handleClick("01")}>
-              Counters and Random Selection
-            </div>
-            <div className={styles.item} onMouseOver={() => handleClick("02")}>Main Menu</div>
-            <div className={styles.item} onMouseOver={() => handleClick("03")}>
-              Wings movement setup panel
-            </div>
-            <div className={styles.item} onMouseOver={() => handleClick("04")}>Sensor's test panel</div>
-            <div className={styles.item} onMouseOver={() => handleClick("05")}>
-              Feedback signals setup
-            </div>
-            <div className={styles.item} onMouseOver={() => handleClick("06")}>Input signals setup</div>
-            <div className={styles.item} onMouseOver={() => handleClick("07")}>
-              Operationg mode selection
-            </div>
-            <div className={styles.item} onMouseOver={() => handleClick("08")}>Random selecting</div>
-            <div className={styles.item} onMouseOver={() => handleClick("09")}>
-              Random selection option
-            </div>
-            <div className={styles.item} onMouseOver={() => handleClick("10")}>
-              Work schedule planning
-            </div>
-            <div className={styles.item} onMouseOver={() => handleClick("11")}>Service settings</div>
-            <div className={styles.item} onMouseOver={() => handleClick("12")}>Automatic tests</div>
-            {/* <li onMouseOver={()=>handleClick('13')}>Settings report</li> */}
-            {/* <li onMouseOver={()=>handleClick('14')}>Pictograms selection</li>
-            <li onMouseOver={()=>handleClick('15')}>Pictograms selection</li>
-            <li onMouseOver={()=>handleClick('16')}>Pictograms selection</li> */}
-            <div className={styles.item} onMouseOver={() => handleClick("17")}>Settings report</div>
+            <div className={styles.buttonWhite} onMouseOver={() => handleClick("02")}>Main Menu</div>
+            <div className={styles.buttonWhite} onMouseOver={() => handleClick("01")}>Counters</div>
+            <div className={styles.buttonWhite} onMouseOver={() => handleClick("03")}>Wings setup</div>
+            <div className={styles.buttonWhite} onMouseOver={() => handleClick("04")}>Sensor's test</div>
+            <div className={styles.buttonWhite} onMouseOver={() => handleClick("05")}>Feedback signals</div>
+            <div className={styles.buttonWhite} onMouseOver={() => handleClick("06")}>Input signals</div>
+            <div className={styles.buttonWhite} onMouseOver={() => handleClick("07")}>Operationg modes</div>
+            <div className={styles.buttonWhite} onMouseOver={() => handleClick("08")}>Random selecting</div>
+            <div className={styles.buttonWhite} onMouseOver={() => handleClick("09")}>Random selection</div>
+            <div className={styles.buttonWhite} onMouseOver={() => handleClick("10")}>Work schedule</div>
+            <div className={styles.buttonWhite} onMouseOver={() => handleClick("11")}>Service settings</div>
+            <div className={styles.buttonWhite} onMouseOver={() => handleClick("12")}>Automatic tests</div>
+            <div className={styles.buttonWhite} onMouseOver={() => handleClick("17")}>Settings report</div>
           
         </div>
 
@@ -61,3 +45,5 @@ export default function AccordionMobile(props) {
     </>
   );
 }
+
+
