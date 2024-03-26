@@ -58,7 +58,11 @@ export default function AccordionMobile(props) {
         </div>
 
         <div className={styles.rightInternalContainer2}>
-          <img className={styles.image} src="gate.jpg"></img>
+          {/* <img className={styles.image} src="film_mobile.mp4"></img> */}
+          <video width="500" muted autoPlay loop>
+        <source src="film_gate_01.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
         </div>
 
       </div>
