@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@auth0/auth0-react": "^2.2.4",
+    "@babel/plugin-proposal-private-property-in-object": "^7.16.10",
     "@fontsource/roboto": "^5.0.12",
     "@mui/icons-material": "^5.15.11",
     "@mui/material": "^5.15.10",
@@ -20,8 +22,7 @@
     "react-scripts": "^5.0.1",
     "sass": "^1.71.1",
     "styled-components": "^6.1.8",
-    "web-vitals": "^2.1.4",
-    "@babel/plugin-proposal-private-property-in-object": "^7.16.10"
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
