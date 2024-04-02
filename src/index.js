@@ -14,17 +14,21 @@ import { Auth0Provider } from '@auth0/auth0-react';
 const domain = process.env.REACT_APP_AUTH0_DOMAIN;
 const clientId = process.env.REACT_APP_AUTH0_CLIENT_ID;
 
+console.log("Domain: ", domain);
+console.log("Client_ID: ", clientId);
 
 const router = createBrowserRouter([
-  { element: <Layout />,
-  
-   children: [
-     { path: "/",          element: <MainPage />},
-     { path: "Products",   element: <Products />},
-     { path: "Contact",    element: <Contact />},
-     { path: "Portfolio",  element: <Portfolio />},
-     { path: "About",      element: <About />},
-    ]}
+  {
+    element: <Layout />,
+
+    children: [
+      { path: "/", element: <MainPage /> },
+      { path: "Products", element: <Products /> },
+      { path: "Contact", element: <Contact /> },
+      { path: "Portfolio", element: <Portfolio /> },
+      { path: "About", element: <About /> },
+    ]
+  }
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -33,9 +37,9 @@ root.render(
     <Auth0Provider
       domain={domain}
       clientId={clientId}
-      redirectUri = {window.location.origin}>
+      redirectUri={window.location.origin}>
 
-    <RouterProvider router={router} />
+      <RouterProvider router={router} />
     </Auth0Provider>
   </React.StrictMode>
 );

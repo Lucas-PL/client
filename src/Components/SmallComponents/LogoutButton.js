@@ -9,6 +9,7 @@ const LogoutButton = () => {
             Sign Out
         </button>
         )
+     
     )
 }
 
