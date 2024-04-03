@@ -10,7 +10,8 @@ export default function MainPage() {
 
   const { user, isAuthenticated } = useAuth0();
 
-    return (
+  return (
+    <>
       <div className="App">
           <MainTitle 
             titleOne="SG" 
@@ -25,6 +26,13 @@ export default function MainPage() {
            )}
           
       </div>
-    )
-  }
+
+      <h1>Auth0 Login</h1>
+      <LoginButton />
+      <LogoutButton />
+      <UserProfile />
+    </>
+
+  )
+}
 
