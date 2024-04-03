@@ -13,10 +13,7 @@ export default function Contact() {
       <div className="App">
         <MainTitle titleOne="Contact" titleTwo="Us" />
       </div>
-      {/* <h1>Auth0 Login</h1>
-      <LoginButton />
-      <LogoutButton />
-      <UserProfile /> */}
+     
 
     </>
 
