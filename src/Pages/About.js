@@ -2,6 +2,7 @@ import MainTitle from "../Components/MainTitle";
 import React, { useState } from "react";
 import AccordionMobile from "../Components/AccordionMobile";
 
+
 export default function About() {
   return (
     <>

@@ -5,6 +5,7 @@ import UserProfile from '../Components/SmallComponents/UserProfile';
 
 
 
+
 export default function Contact() {
 
   return (
@@ -12,10 +13,7 @@ export default function Contact() {
       <div className="App">
         <MainTitle titleOne="Contact" titleTwo="Us" />
       </div>
-      <h1>Auth0 Login</h1>
-      <LoginButton />
-      <LogoutButton />
-      <UserProfile />
+     
 
     </>
 

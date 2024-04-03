@@ -17,15 +17,17 @@ const clientId = process.env.REACT_APP_AUTH0_CLIENT_ID;
 console.log('Domain: ',domain)
 console.log('ClientId: ', clientId)
 const router = createBrowserRouter([
-  { element: <Layout />,
-  
-   children: [
-     { path: "/",          element: <MainPage />},
-     { path: "Products",   element: <Products />},
-     { path: "Contact",    element: <Contact />},
-     { path: "Portfolio",  element: <Portfolio />},
-     { path: "About",      element: <About />},
-    ]}
+  {
+    element: <Layout />,
+
+    children: [
+      { path: "/", element: <MainPage /> },
+      { path: "Products", element: <Products /> },
+      { path: "Contact", element: <Contact /> },
+      { path: "Portfolio", element: <Portfolio /> },
+      { path: "About", element: <About /> },
+    ]
+  }
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -38,7 +40,7 @@ root.render(
         redirectUri: window.location.origin }}
       >
 
-    <RouterProvider router={router} />
+      <RouterProvider router={router} />
     </Auth0Provider>
   </React.StrictMode>
 );
